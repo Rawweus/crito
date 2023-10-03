@@ -792,6 +792,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .service-consulting .service-consulting-container .four-squares .square:hover {
   background-color: #f9d783;
 }
+.service-consulting .service-consulting-container .four-squares .square:hover .clickable-icon {
+  color: white;
+}
 .service-consulting .service-consulting-container .four-squares .square .dashed-line {
   width: 50px;
   border-bottom: 2px solid #000;

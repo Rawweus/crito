@@ -810,6 +810,10 @@ header {
 
         &:hover {
           background-color: #f9d783;
+
+          .clickable-icon{
+            color: white;
+          }
         }
 
         .dashed-line {
