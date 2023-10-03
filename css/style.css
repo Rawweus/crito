@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;700;900&display=swap");
 html,
@@ -395,20 +394,20 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  margin-bottom: 26px; /* Sätt detta som standard för mobile first */
-  text-align: center; /* Sätt detta som standard för mobile first */
+  margin-bottom: 26px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 993px) {
   .services-container .services-left h2 {
-    margin-bottom: -20px; /* Återställ margin-bottom för större skärmar */
-    text-align: left; /* Återställ text-align för större skärmar */
+    margin-bottom: -20px;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
   .services-container .services-left h2 {
-    font-size: 45px; /* Öka font-storleken för ännu större skärmar */
+    font-size: 45px;
   }
 }
 .services-container .services-left .btn-yellow {
@@ -1187,7 +1186,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .meetourteam-testimonial-container .testimonial-section .reviews-wrapper .review .review-image-section img {
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* För att göra bilden rund */
+  border-radius: 50%;
   margin-right: 10px;
 }
 @media (max-width: 991px) {

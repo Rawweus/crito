@@ -409,18 +409,18 @@ header {
         font-family: "DM Sans", sans-serif;
         font-weight: 700;
         font-size: 36px;
-        margin-bottom: 26px; /* Sätt detta som standard för mobile first */
-        text-align: center; /* Sätt detta som standard för mobile first */
+        margin-bottom: 26px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
 
           @media (min-width: 993px) {
-            margin-bottom: -20px; /* Återställ margin-bottom för större skärmar */
-            text-align: left; /* Återställ text-align för större skärmar */
+            margin-bottom: -20px;
+            text-align: left; 
           }
 
             @media (min-width: 1200px) {
-              font-size: 45px; /* Öka font-storleken för ännu större skärmar */
+              font-size: 45px;
             }
       }
 
@@ -581,7 +581,7 @@ header {
             display: block;
             font-family: "DM Sans", sans-serif;
             font-weight: 700;
-            margin: 0; // För att ta bort marginalen och undvika extra mellanrum
+            margin: 0;
             color: #f94d1c;
             font-weight: bold;
           }
@@ -1253,7 +1253,7 @@ header {
           img {
             width: 60px;
             height: 60px;
-            border-radius: 50%; /* För att göra bilden rund */
+            border-radius: 50%;
             margin-right: 10px;
 
             @media (max-width: 991px) {
@@ -1275,7 +1275,6 @@ header {
         }
 
         p {
-          // margin-left: 10px;
           font-family: "Inter", sans-serif;
           font-size: 20px;
           font-weight: 400;
@@ -1413,7 +1412,7 @@ header {
     }
 
     span:nth-child(2) {
-      background-color: black; // Eller vilken annan färg du föredrar
+      background-color: black;
     }
   }
 }
