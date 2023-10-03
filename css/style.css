@@ -1402,6 +1402,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "logo company help" "logo resources link";
   align-items: center;
+  padding-bottom: 80px;
 }
 .footer .footer-menu .footer-logo-section {
   grid-area: logo;
@@ -1434,14 +1435,26 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .footer .footer-menu .company-section {
   grid-area: company;
 }
+.footer .footer-menu .company-section h3 a {
+  color: white;
+}
 .footer .footer-menu .help-section {
   grid-area: help;
+}
+.footer .footer-menu .help-section h3 a {
+  color: white;
 }
 .footer .footer-menu .resources-section {
   grid-area: resources;
 }
+.footer .footer-menu .resources-section h3 a {
+  color: white;
+}
 .footer .footer-menu .link-section {
   grid-area: link;
+}
+.footer .footer-menu .link-section h3 a {
+  color: white;
 }
 @media (min-width: 1200px) {
   .footer .footer-menu {
@@ -1473,6 +1486,11 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   }
 }
 
+.footer-top {
+  position: relative;
+  border-bottom: 1px solid #7c7c7c;
+}
+
 .company-section h3,
 .help-section h3,
 .resources-section h3,
@@ -1493,29 +1511,22 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .lower-footer {
-  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .lower-footer .footer-icons a {
   padding-left: 20px;
 }
 
-.footer-line {
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 1px solid white;
-}
-
 .bg-footer-lines {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   right: 0;
   z-index: 1;
   width: 20%;
@@ -1527,4 +1538,196 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+.contact-page-showcase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0efe9;
+  text-align: center;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.contact-page-showcase .bg-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 40%;
+}
+.contact-page-showcase h1 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+}
+.contact-page-showcase .nav-links {
+  display: flex;
+}
+.contact-page-showcase a {
+  color: black;
+  padding: 20px;
+}
+
+.contact-page-white-bg {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .contact-page-white-bg {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+.contact-page-white-bg .contact-info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 420px);
+  gap: 30px;
+  min-width: 0;
+  min-height: 0;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .contact-page-white-bg .contact-info-wrapper {
+    grid-template-columns: repeat(3, 420px);
+    width: 1320px;
+    height: 206px;
+  }
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details {
+  margin: 0 auto;
+  width: 420px;
+  height: 206px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(201, 199, 199);
+}
+@media (max-width: 576px) {
+  .contact-page-white-bg .contact-info-wrapper .contact-info-details {
+    width: 80%;
+  }
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content {
+  width: 324px;
+  height: 107.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content {
+    width: 80%;
+  }
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content i.fa-solid {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content p {
+  margin: 0;
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.contact-page-white-bg .contact-info-wrapper .contact-info-details .contact-info-content .detail-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: none;
+  margin: auto;
+  background-color: #f0efe9;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+@media (min-width: 1400px) {
+  .form-content {
+    width: 1320px;
+  }
+}
+.form-content .form-header {
+  display: flex;
+  justify-content: center;
+}
+.form-content .form-header h2 {
+  padding-top: 100px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .form-content .form-header h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+.form-content .contact-form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-left: none;
+  margin-right: none;
+}
+@media (min-width: 576px) {
+  .form-content .contact-form {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+.form-content .contact-form label,
+.form-content .contact-form a {
+  width: 100%;
+  border-radius: 30px;
+}
+.form-content .contact-form input,
+.form-content .contact-form textarea {
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+.form-content .contact-form input::-moz-placeholder, .form-content .contact-form textarea::-moz-placeholder {
+  color: lightgray;
+}
+.form-content .contact-form input::placeholder,
+.form-content .contact-form textarea::placeholder {
+  color: lightgray;
+}
+.form-content .contact-form textarea {
+  resize: none;
+}
+.form-content .contact-form .btn-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
 }
